@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat_Kokoa Talk</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="blue-screen">
+    <div class="status-bar blue-screen">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <img
+          class="status-bar--batterysize"
+          src="../images/status-bar/battery.png"
+          alt="배터리 표시"
+        />
+        <img
+          class="status-bar--lightningsize"
+          src="../images/status-bar/lightning.png"
+          alt="충전 중 표시"
+        />
+      </div>
+    </div>
+
+    <header class="alt-screen-header blue-screen">
+      <div class="alt-screen-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="alt-screen-header__column">
+        <h1>튜브</h1>
+      </div>
+      <div class="alt-screen-header__column">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span><i class="fa-solid fa-bars"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen chat-screen">
+      <div class="chat__timestamp">2022년 9월 15일</div>
+
+      <div class="message__row">
+        <img src="../images/user-component/friends02.png" />
+        <div class="message__content">
+          <span class="message__name">튜브</span>
+          <div class="message__text">
+            <div class="message__bubble-tail"></div>
+            <span class="message__bubble">춘식이 치킨 먹을래?</span>
+            <span class="message__time">PM 17:55</span>
+            <!-- <span class="message__read">1</span> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="message__row message__row--own">
+        <div class="message__content">
+          <div class="message__text">
+            <div class="message__bubble-tail"></div>
+            <span class="message__bubble">좋아!</span>
+            <span class="message__time">PM 18:02</span>
+            <span class="message__read">1</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__cloumn">
+        <i class="fa-solid fa-plus fa-lg"></i>
+      </div>
+      <div class="reply__cloumn">
+        <input type="text" placeholder="Write a message" />
+      </div>
+      <div class="reply__cloumn">
+        <div class="reply__icons">
+          <i class="fa-regular fa-face-smile fa-lg"></i>
+          <i class="fa-solid fa-hashtag fa-lg"></i>
+          <button class="hide">
+            <i class="fa-solid fa-paper-plane fa-lg reply__send"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Please reduce the screen size.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58531aeaaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>

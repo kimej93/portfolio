@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <img
+          class="status-bar--batterysize"
+          src="images/status-bar/battery.png"
+          alt="배터리 표시"
+        />
+        <img
+          class="status-bar--lightningsize"
+          src="images/status-bar/lightning.png"
+          alt="충전 중 표시"
+        />
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account,<br />
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="html/friends.html" method="get" id="login-form">
+      <input type="text" placeholder="Email or phone number" required />
+      <input
+        type="password"
+        placeholder="Password"
+        autocomplete="on"
+        required
+      />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Please reduce the screen size.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58531aeaaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+  </body>
+</html>

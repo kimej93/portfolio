@@ -1,0 +1,35 @@
+#no-mobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #3b1e1e;
+  font-weight: 700;
+}
+
+@keyframes slidetop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 821px) {
+  #no-mobile {
+    display: flex;
+  }
+
+  #no-mobile span {
+    animation: slidetop 0.7s ease-in-out;
+  }
+}

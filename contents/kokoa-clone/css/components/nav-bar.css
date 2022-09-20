@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  border-top: var(--gray-border);
+  padding: 25px 50px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2f363e;
+  position: relative;
+}
+
+@keyframes chatnotification {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__chatnotification {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  animation: chatnotification 2s ease-in-out infinite;
+}
+
+.nav__notification {
+  position: absolute;
+  top: -3px;
+  right: -6px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More_Kokoa Talk</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <img
+          class="status-bar--batterysize"
+          src="../images/status-bar/battery.png"
+          alt="배터리 표시"
+        />
+        <img
+          class="status-bar--lightningsize"
+          src="../images/status-bar/lightning.png"
+          alt="충전 중 표시"
+        />
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icon">
+        <span>
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </span>
+        <span>
+          <a href="settings.html">
+            <span class="setting__notification mini-badge"></span>
+            <i class="fa-solid fa-gear"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            class="user-component__profile user-component__profile--xl"
+            src="../images/user-component/profile.png"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__name">춘식이</h4>
+            <h6 class="user-component__subtitle">
+              +2 010-1234-5678
+              <span class="user-component__subtitle-red">!</span>
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <i class="fa-regular fa-message fa-xl"></i>
+        </div>
+      </div>
+
+      <div class="arrow-icons">
+        <div class="arrow-icons__icon">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <span class="setting__notification mini-badge"></span>
+          <i class="fa-regular fa-hard-drive"></i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-regular fa-face-smile"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-solid fa-brush"></i>
+          <span>Themes</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-solid fa-code-branch"></i>
+          <span>Account</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-regular fa-comments"></i>
+          <span>Openchat</span>
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <h6 class="suggestions__title">Suggestions</h6>
+
+        <div class="suggestions__apps">
+          <div class="suggestions_app">
+            <img
+              src="	https://cs.kakao.com/img/cskakaocom/pc/thumb/thumb_kakaostory.png"
+            />
+            <span class="suggestions_app_title">Kokoa Story</span>
+          </div>
+          <div class="suggestions_app">
+            <img
+              src="https://cs.kakao.com/img/cskakaocom/pc/thumb/thumb_kakaotv.png"
+            />
+            <span class="suggestions_app_title">Kokoa TV</span>
+          </div>
+          <div class="suggestions_app">
+            <img
+              src="	https://cs.kakao.com/img/cskakaocom/pc/thumb/thumb_kakaopage.png"
+            />
+            <span class="suggestions_app_title">Kokoa Page</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__chatnotification badge">1</span>
+            <i class="fa-regular fa-comment fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification mini-badge"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Please reduce the screen size.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58531aeaaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>

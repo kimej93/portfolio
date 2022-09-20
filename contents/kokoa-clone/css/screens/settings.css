@@ -1,0 +1,53 @@
+.settings__cloumn {
+  padding-bottom: 0px;
+  border-bottom: var(--gray-border);
+}
+
+.settings-list {
+  padding: 0 25px;
+}
+
+.settings-setting {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 20px 0;
+}
+
+.settings-setting__cloumn {
+  cursor: pointer;
+}
+
+.settings-setting:last-child {
+  border-bottom: none;
+}
+
+.settings-setting__title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-left: 15px;
+  position: relative;
+  z-index: -1;
+}
+
+.settings-setting__text {
+  font-size: 12px;
+  margin: 8px 0 0 32px;
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.settings-setting__icon {
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 6px;
+  font-weight: 600;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  right: -25px;
+}

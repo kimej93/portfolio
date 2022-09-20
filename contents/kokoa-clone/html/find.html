@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find_Kokoa Talk</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <img
+          class="status-bar--batterysize"
+          src="../images/status-bar/battery.png"
+          alt="배터리 표시"
+        />
+        <img
+          class="status-bar--lightningsize"
+          src="../images/status-bar/lightning.png"
+          alt="충전 중 표시"
+        />
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icon">
+        <span>
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </span>
+        <span>
+          <a href="settings.html">
+            <span class="setting__notification mini-badge"></span>
+            <i class="fa-solid fa-gear"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="arrow-icons">
+        <div class="arrow-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span class="arrow-icons__long-text">Add by <br />Contacts</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-regular fa-id-card"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="arrow-icons__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Rcommended Friends</h6>
+        <span class="recommended-friends__text">
+          You have no recommended friends.
+        </span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h6>Open Chat</h6>
+          <span>
+            Go to Openchat Home
+            <i class="fa-solid fa-chevron-right fa-xs"></i>
+          </span>
+        </div>
+
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__chattitle">#BTS</h5>
+            <h6 class="open-post__hashtag">#bts#army#friends</h6>
+
+            <div class="open-post__members">
+              <img
+                src="https://search.pstatic.net/common?type=o&size=142x142&quality=100&direct=true&src=https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F001%2F781%2F1781318.jpg%3Ftype%3Dr204Fll%26v%3D20220514083510"
+              />
+              <span>802 members</span>
+              <div class="divider"></div>
+              <span>Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://search.pstatic.net/common?type=o&size=142x142&quality=100&direct=true&src=https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F001%2F781%2F1781318.jpg%3Ftype%3Dr204Fll%26v%3D20220514083510"
+              />
+              <span><i class="fa-solid fa-heart fa-xs"></i>326</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__chattitle">#BTS</h5>
+            <h6 class="open-post__hashtag">#bts#army#friends</h6>
+
+            <div class="open-post__members">
+              <img
+                src="https://search.pstatic.net/common?type=o&size=142x142&quality=100&direct=true&src=https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F005%2F902%2F5902422.jpg%3Ftype%3Dr204Fll%26v%3D20220512123156"
+              />
+              <span>802 members</span>
+              <div class="divider"></div>
+              <span>Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://search.pstatic.net/common?type=o&size=142x142&quality=100&direct=true&src=https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F005%2F902%2F5902422.jpg%3Ftype%3Dr204Fll%26v%3D20220512123156"
+              />
+              <span><i class="fa-solid fa-heart fa-xs"></i>326</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__chatnotification badge">1</span>
+            <i class="fa-regular fa-comment fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification mini-badge"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Please reduce the screen size.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58531aeaaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/clock.js"></script>
+  </body>
+</html>

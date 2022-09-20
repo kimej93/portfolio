@@ -1,0 +1,9 @@
+:root {
+  --yellow: #fae100;
+  --orange: #ff6229;
+  --brown: #3c1e1e;
+  --header-padiing: 15px 10px;
+  --horizontal-space: 10px;
+  --gray-border: 1px solid rgba(0, 0, 0, 0.1);
+  --find-font-color: rgba(0, 0, 0, 0.4);
+}

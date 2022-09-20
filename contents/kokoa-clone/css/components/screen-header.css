@@ -1,0 +1,35 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--header-padiing);
+  width: 100%;
+  position: sticky;
+  top: 27px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: var(--gray-border);
+}
+
+.screen-header__title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.screen-header__icon span {
+  margin-left: 15px;
+}
+
+@keyframes settingIconRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.screen-header__icon .fa-gear:hover {
+  animation: settingIconRotate 2s ease-in-out infinite;
+}
