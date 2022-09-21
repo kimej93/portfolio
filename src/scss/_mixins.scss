@@ -13,15 +13,15 @@ $minMobile: 120px;
       @content;
     }
   } @else if $device == "tablet" {
-    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) and (orientation: landscape) {
       @content;
     }
   } @else if $device == "tab" {
-    @media screen and (min-width: $minTab) and (max-width: $maxTab) {
+    @media screen and (min-width: $minTab) and (max-width: $maxTab) and (orientation: landscape) {
       @content;
     }
   } @else if $device == "mobile" {
-    @media screen and (min-width: $minMobile) and (max-width: $maxMobile) {
+    @media screen and (min-width: $minMobile) and (max-width: $maxMobile) and (orientation: landscape) {
       @content;
     }
   }
