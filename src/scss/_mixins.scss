@@ -1,0 +1,28 @@
+$maxNotebook: 1349px;
+$minNotebook: 1030px;
+$maxTablet: 1029px;
+$minTablet: 830px;
+$maxTab: 829px;
+$minTab: 538px;
+$maxMobile: 537px;
+$minMobile: 120px;
+
+@mixin responsive($device) {
+  @if $device == "notebook" {
+    @media screen and (min-width: $minNotebook) and (max-width: $maxNotebook) {
+      @content;
+    }
+  } @else if $device == "tablet" {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+      @content;
+    }
+  } @else if $device == "tab" {
+    @media screen and (min-width: $minTab) and (max-width: $maxTab) {
+      @content;
+    }
+  } @else if $device == "mobile" {
+    @media screen and (min-width: $minMobile) and (max-width: $maxMobile) {
+      @content;
+    }
+  }
+}

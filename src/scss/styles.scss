@@ -1,0 +1,563 @@
+@import "_mixins";
+
+body {
+  font-family: arial, helvetica;
+  color: rgba(0, 0, 0, 1);
+}
+
+.hide {
+  display: none;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 50px;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+
+  li {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover a {
+      border-bottom: 3px solid white;
+      padding-bottom: 9px;
+    }
+  }
+}
+
+#fullpage {
+  .section0 {
+    background: url(../../images/main1_bg.jpg) 0 0 no-repeat;
+
+    .fp-tableCell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .intro {
+      width: 60%;
+      background: rgba($color: #ffffff, $alpha: 0.8);
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      position: relative;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #032b3d4b;
+        position: absolute;
+        left: 0;
+      }
+
+      &::after {
+        top: 5px;
+      }
+
+      &::before {
+        bottom: 5px;
+      }
+    }
+
+    h1 {
+      color: #032b3d;
+      font-size: 100px;
+      font-weight: 600;
+      width: 550px;
+      animation: typing 1s steps(9), blink 0.5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+    }
+
+    img {
+      width: 50px;
+      justify-self: flex-end;
+      position: absolute;
+      bottom: 3%;
+      left: calc(50% - 50px);
+      animation: motion 1.5s linear 0s infinite alternate;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    @keyframes motion {
+      0% {
+        bottom: 3%;
+      }
+      50% {
+        bottom: 5%;
+      }
+    }
+  }
+
+  .section1 {
+    text-align: center;
+
+    .slide {
+      &:first-child h1 {
+        background: linear-gradient(to top, #f7bca4 50%, transparent 50%);
+      }
+
+      &:nth-child(2) h1 {
+        background: linear-gradient(to top, #ffb9b9 50%, transparent 50%);
+      }
+
+      &:last-child h1 {
+        background: linear-gradient(to top, #ffdc7c 50%, transparent 50%);
+      }
+    }
+
+    .fp-tableCell {
+      height: 100vh !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      .contents {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        position: relative;
+
+        img {
+          width: 100%;
+          box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.1);
+        }
+
+        > div {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba($color: #000000, $alpha: 0.9);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transition: all 0.3s ease-in-out;
+          opacity: 0;
+
+          span {
+            line-height: 30px;
+
+            &:nth-child(4) {
+              margin-top: 20px;
+            }
+          }
+
+          .btn {
+            padding: 8px 60px;
+            border: 1px solid white;
+            align-self: center;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+
+        &:hover {
+          > div {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .section2 {
+    height: 100vh !important;
+
+    .fp-tableCell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        margin-top: 80px;
+        font-size: 40px;
+        font-weight: 600;
+      }
+    }
+
+    .skillsBox {
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 150px;
+      position: relative;
+
+      h2 {
+        text-align: center;
+        margin-bottom: 80px;
+        font-weight: 600;
+        font-size: 24px;
+        background: rgb(14, 14, 14);
+        color: white;
+        padding: 8px 40px;
+        border-radius: 50px;
+      }
+
+      .about {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          margin-bottom: 20px;
+
+          b {
+            display: inline-block;
+            width: 80px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .borderLine {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90%;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        position: absolute;
+      }
+
+      .skills {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .skills-contents {
+          width: 100%;
+          height: 500px;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          grid-template-rows: repeat(2, 200px);
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            img {
+              width: 120px;
+            }
+
+            span {
+              font-weight: 600;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("notebook") {
+  #fullpage {
+    .section0 {
+      .intro {
+        width: 60%;
+      }
+    }
+
+    .section1 {
+      .fp-tableCell {
+        .contents {
+          width: 80%;
+        }
+      }
+    }
+
+    .section2 {
+      .skillsBox {
+        .skills {
+          .skills-contents {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+            div img {
+              width: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("tablet") {
+  #fullpage {
+    .section0 {
+      .intro {
+        width: 70%;
+      }
+
+      h1 {
+        font-size: 80px;
+        width: 440px;
+      }
+    }
+
+    .section1 {
+      .fp-tableCell {
+        .contents {
+          width: 80%;
+        }
+      }
+    }
+
+    .section2 {
+      .skillsBox {
+        .skills {
+          .skills-contents {
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            grid-template-rows: repeat(2, 180px);
+
+            div img {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("tab") {
+  #fullpage {
+    .section0 {
+      .intro {
+        width: 70%;
+      }
+
+      h1 {
+        font-size: 50px;
+        width: 280px;
+      }
+    }
+
+    .section1 {
+      .fp-tableCell {
+        .contents {
+          width: 50%;
+
+          .pcImg {
+            display: none;
+          }
+
+          .moImg {
+            display: block;
+          }
+
+          div {
+            font-size: 14px;
+
+            span:nth-child(4) {
+              margin-top: 0;
+              padding: 0 20px;
+            }
+
+            .btn {
+              padding: 3px 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .section2 {
+      .skillsBox {
+        .about {
+          li b {
+            display: block;
+            line-height: 2.5em;
+          }
+        }
+
+        .skills {
+          .skills-contents {
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            grid-template-rows: repeat(3, 150px);
+
+            div {
+              img {
+                width: 100px;
+              }
+
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("mobile") {
+  #menu {
+    font-size: 14px;
+    padding: 10px;
+
+    li {
+      margin-right: 30px;
+    }
+  }
+  #fullpage {
+    .section0 {
+      .intro {
+        width: 82%;
+      }
+
+      h1 {
+        font-size: 40px;
+        width: 223px;
+      }
+
+      img {
+        left: calc(50% - 25px);
+      }
+    }
+
+    .section1 {
+      .fp-tableCell {
+        h1 {
+          font-size: 30px;
+        }
+
+        .contents {
+          width: 64%;
+
+          .pcImg {
+            display: none;
+          }
+
+          .moImg {
+            display: block;
+          }
+
+          div {
+            font-size: 12px;
+
+            span:nth-child(4) {
+              margin-top: 0;
+              padding: 0 20px;
+            }
+
+            .btn {
+              padding: 3px 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .section2 {
+      .fp-tableCell {
+        h1 {
+          font-size: 30px;
+          margin-top: 100px;
+        }
+      }
+      .skillsBox {
+        padding-top: 80px;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+
+        .about {
+          width: 90%;
+          margin-bottom: 50px;
+
+          li {
+            margin-bottom: 5px;
+
+            b {
+              display: inline-block;
+              line-height: 2.5em;
+            }
+          }
+        }
+
+        .borderLine {
+          width: 90%;
+          height: 1px;
+          top: 33%;
+        }
+
+        .skills {
+          width: 90%;
+
+          .skills-contents {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: repeat(3, 130px);
+
+            div {
+              img {
+                width: 90px;
+              }
+
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
