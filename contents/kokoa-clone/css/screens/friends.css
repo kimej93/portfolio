@@ -48,6 +48,11 @@
   font-size: 14px;
 }
 
+.friends-screen__fridens .user-component__wrap {
+  overflow: scroll;
+  margin-bottom: 70px;
+}
+
 .friends-screen__fridens .user-component__wrap .user-component {
   margin-bottom: 20px;
 }
